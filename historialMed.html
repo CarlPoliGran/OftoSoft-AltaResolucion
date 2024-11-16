@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historial Médico - OftoSoft</title>
+  <link rel="stylesheet" href="historialMed.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Historial Médico de Paciente</h1>
+    
+    <div id="formConsulta" class="formConsulta">
+      <h2>Agregar Consulta Médica</h2>
+      <form id="consultaForm">
+        <label for="fechaConsulta">Fecha de consulta:</label>
+        <input type="date" id="fechaConsulta" required>
+
+        <label for="diagnostico">Diagnóstico:</label>
+        <textarea id="diagnostico" required></textarea>
+
+        <label for="tratamiento">Plan de tratamiento:</label>
+        <textarea id="tratamiento" required></textarea>
+
+        <label for="observaciones">Observaciones adicionales:</label>
+        <textarea id="observaciones"></textarea>
+
+        <button type="submit">Registrar Consulta</button>
+      </form>
+    </div>
+    
+    <div id="historialConsultas">
+      <h2>Historial de Consultas</h2>
+      <div id="consultasList"></div>
+      <div id="analisisComparativo"></div>
+    </div>
+
+  </div>
+
+  <script src="historialMed.js"></script>
+</body>
+</html>

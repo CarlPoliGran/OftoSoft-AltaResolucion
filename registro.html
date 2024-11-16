@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Paciente - Consultorio Oftalmológico</title>
+  <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registro de Paciente</h1>
+    <form id="registroForm">
+
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" required>
+      
+      <label for="fechaNacimiento">Fecha de nacimiento:</label>
+      <input type="date" id="fechaNacimiento" required>
+      
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" required>
+      
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" required>
+      
+   
+      <label for="historialClinico">Historial clínico:</label>
+      <textarea id="historialClinico" required></textarea>
+      
+ 
+      <label for="antecedentes">Antecedentes médicos:</label>
+      <textarea id="antecedentes" required></textarea>
+      
+
+      <label for="preferenciaContacto">Preferencia de contacto:</label>
+      <select id="preferenciaContacto">
+        <option value="telefono">Teléfono</option>
+        <option value="email">Correo electrónico</option>
+      </select>
+      
+
+      <label for="documentos">Adjuntar exámenes:</label>
+      <input type="file" id="documentos" accept="image/*" multiple>
+      
+      <button type="submit">Registrar</button>
+    </form>
+    <div id="mensaje" style="color:green;"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

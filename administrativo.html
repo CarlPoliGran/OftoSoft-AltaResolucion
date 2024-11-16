@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Administrador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h2>Bienvenido, <span id="userName"></span> (Administrador)</h2>
+            <button id="logoutBtn">Cerrar sesión</button>
+        </header>
+
+        <nav class="sidebar">
+            <h3>Menú de Administración</h3>
+            <ul>
+                <li><a href="historialMed.html">Historial y tratamientos</a></li>
+                <li><a href="registro.html">Registro Pacientes</a></li>
+                <li><a href="admin.html">Gestionar Pacientes</a></li>
+                <li><a href="pagos.html">Pagos</a></li>
+                <li><a href="dash.html">Mi consultorio</a></li>
+                <li><a href="settings.html">Configuración</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>
+        </nav>
+
+        <section class="metrics">
+            <div class="metric">
+                <h3>Citas Programadas</h3>
+                <p id="appointmentsCount">0</p>
+            </div>
+            <div class="metric">
+                <h3>Pacientes Registrados</h3>
+                <p id="patientsCount">0</p>
+            </div>
+            <div class="metric">
+                <h3>Ingresos Mensuales</h3>
+                <p id="monthlyRevenue">$0</p>
+            </div>
+        </section>
+
+        <section class="overview">
+            <h3>Visión General</h3>
+            <p>Aquí puedes ver las estadísticas generales del consultorio, gestionar citas y pacientes, y generar reportes.</p>
+        </section>
+    </div>
+
+    <script src="administrativo.js"></script>
+</body>
+</html>
+

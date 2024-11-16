@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Paciente</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h2>Bienvenido, <span id="userName"></span> (Paciente) </h2>
+            <button id="logoutBtn">Cerrar sesión</button>
+        </header>
+
+        <nav class="sidebar">
+            <h3>Menú</h3>
+            <ul>
+                <li><a href="calendario.html">Mis Citas</a></li>
+                <li><a href="pagosPaciente.html">Mis pagos</a></li>
+                <li><a href="settings.html">Configuración</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>
+        </nav>
+
+        <section class="appointments">
+            <h3>Próximas Citas</h3>
+            <ul id="appointmentsList"></ul>
+        </section>
+
+        <section class="medical-history">
+            <h3>Historial Médico</h3>
+            <ul id="historyList"></ul>
+        </section>
+    </div>
+
+    <script src="paciente.js"></script>
+</body>
+</html>

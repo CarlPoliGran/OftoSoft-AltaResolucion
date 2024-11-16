@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Médico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h2>Bienvenido, <span id="userName"></span> (Médico)</h2>
+            <button id="logoutBtn">Cerrar sesión</button>
+        </header>
+        <nav class="sidebar">
+            <h3>OftoSoft</h3>
+            <ul>
+                <li><a href="agenda.html">Mis Citas</a></li>
+                <li><a href="misPaciente.html">Mis Pacientes</a></li>
+                <li><a href="historialMed.html">Reportes Médicos</a></li>
+                <li><a href="settings.html">Configuración</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>
+        </nav>
+
+        <section class="appointments">
+            <h3>Próximas Citas</h3>
+            <ul id="appointmentsList"></ul>
+        </section>
+
+        <section class="patient-info">
+            <h3>Pacientes Asignados</h3>
+            <ul id="patientsList"></ul>
+        </section>
+    </div>
+
+    <script src="profesional.js"></script>
+</body>
+</html>

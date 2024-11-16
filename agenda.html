@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Profesionales</title>
+    <link rel="stylesheet" href="styleMed.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h3>OftoSoft - Oftalmología inteligente a su servicio</h3>
+        <ul>
+            <li><a href="misPaciente.html">Pacientes</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <header>
+            <h2>Mi Agenda</h2>
+            <button id="logoutBtn">Cerrar sesión</button>
+        </header>
+
+        <div class="metrics">
+            <div class="metric">
+                <h3>Citas programadas</h3>
+                <p id="appointmentsCount">0</p>
+            </div>
+        </div>
+
+        <div class="overview">
+            <h3>Citas</h3>
+            <ul id="appointmentsList"></ul>
+            <button id="addAppointmentBtn">Agregar Cita</button>
+        </div>
+    </div>
+
+    <script src="scriptMed.js"></script>
+</body>
+</html>

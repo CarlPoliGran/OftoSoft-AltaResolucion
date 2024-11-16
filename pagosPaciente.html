@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagos OftoSoft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="PagosPaciente.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h3>OftoSoft - Oftalmología inteligente a su servicio</h3>
+        <ul>
+            <li><a href="paciente.html">Inicio</a></li>
+            <li><a href="recordatorios.html">Citas</a></li>
+            <li><a href="#">Historial</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <header>
+            <h2>Pagos Pendientes</h2>
+        </header>
+
+        <div class="invoice-list">
+            <h3>Selecciona una factura pendiente</h3>
+            <ul id="invoice-list">
+
+                <li data-id="1" class="invoice-item">
+                    <span class="invoice-description">Consulta Oftalmología</span>
+                    <span class="invoice-amount">$150.00</span>
+                    <button class="select-invoice-btn">Seleccionar</button>
+                </li>
+                <li data-id="2" class="invoice-item">
+                    <span class="invoice-description">Examen de Visión</span>
+                    <span class="invoice-amount">$200.00</span>
+                    <button class="select-invoice-btn">Seleccionar</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="payment-options" id="payment-options" style="display:none;">
+            <h3>Selecciona tu método de pago:</h3>
+            <div class="payment-buttons">
+
+                <button class="payment-button" id="paypal-btn">
+                    <img src="Img/paypal.png" alt="PayPal" />
+                </button>
+                <button class="payment-button" id="pse-btn">
+                    <img src="Img/pse.jpg" alt="PSE" />
+                </button>
+                <button class="payment-button" id="nequi-btn">
+                    <img src="Img/nequi.jpg" alt="Nequi" />
+                </button>
+                <button class="payment-button" id="daviplata-btn">
+                    <img src="Img/daviplata.png" alt="Daviplata" />
+                </button>
+            </div>
+            <p id="selected-invoice-info"></p>
+        </div>
+
+    </div>
+
+    <script src="pagosPaciente.js"></script>
+</body>
+</html>
+

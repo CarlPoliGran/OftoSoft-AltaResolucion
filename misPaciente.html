@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes</title>
+    <link rel="stylesheet" href="styleMed.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Oftosoft</h3>
+        <ul>
+            <li><a href="agenda.html">Agenda</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <header>
+            <h2>Pacientes</h2>
+            <button id="logoutBtn">Cerrar sesión</button>
+        </header>
+
+        <div class="overview">
+            <h3>Lista de Pacientes</h3>
+            <ul id="patientsList"></ul>
+        </div>
+    </div>
+
+    <div id="patientModal" class="modal">
+        <div class="modal-content" id="modalContent">
+            <span class="close-btn" onclick="closePatientModal()">&times;</span>
+        </div>
+    </div>
+
+    <script src="scriptMed.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Consultorio Oftalmológico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>OftoSoft - Oftalmología inteligente a su servicio</h2>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Citas Totales</h3>
+                <p id="total-citas">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Ingresos Totales</h3>
+                <p id="total-ingresos">$0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Asistencia</h3>
+                <p id="porcentaje-asistencia">0%</p>
+            </div>
+        </div>
+
+        <div class="charts-container">
+            <div class="chart-card">
+                <h3>Citas Diarias</h3>
+                <canvas id="citas-chart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Ingresos Diarios</h3>
+                <canvas id="ingresos-chart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Asistencia</h3>
+                <canvas id="asistencia-chart"></canvas>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="exportar-reportes">Exportar Reportes</button>
+        </div>
+    </div>
+
+    <script src="dash.js"></script>
+</body>
+</html>
+

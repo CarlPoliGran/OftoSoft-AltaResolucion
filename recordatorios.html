@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OftoSoft - Recordatorios</title>
+    <link rel="stylesheet" href="recordatorios.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <h2>Mis Recordatorios</h2>
+        <button id="agregar-recordatorio">Agregar Nuevo Recordatorio</button>
+        <div id="lista-notificaciones"></div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3>Confirmar Recordatorio</h3>
+            <p id="modal-message"></p>
+
+            <div id="reprogramar-form" style="display:none;">
+                <label for="nueva-fecha">Nueva Fecha y Hora:</label>
+                <input type="datetime-local" id="nueva-fecha" required />
+                <button id="guardar-reprogramacion">Guardar Nueva Fecha</button>
+            </div>
+
+            <div id="ajustar-form" style="display:none;">
+                <button id="eliminar-recordatorio">Eliminar Recordatorio</button>
+                <button id="marcar-como-realizado">Marcar como Realizado</button>
+                <button id="posponer-recordatorio">Recordar Más Tarde</button>
+            </div>
+
+            <button id="confirmar">Confirmar</button>
+            <button id="reprogramar">Reprogramar</button>
+            <button id="ajustar">Ajustar Recordatorio</button>
+            <button id="cerrar">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="recordatorios.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

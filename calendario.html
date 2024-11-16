@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Citas Médicas - OftoSoft</title>
+  <link rel="stylesheet" href="calendario.css">
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Gestión de Citas Médicas</h1>
+    
+    
+    <div id="calendario"></div>
+
+    
+    <div id="formCita" class="formCita">
+      <h2>Confirmar cita</h2>
+      <form id="citaForm">
+        <label for="paciente">Nombre del paciente:</label>
+        <input type="text" id="paciente" required>
+        
+        <label for="medico">Seleccionar Profesional:</label>
+        <select id="medico" required>
+          <option value="Dr. Juan">Dr. Juan Moreno</option>
+          <option value="Dra. María">Dra. Angelica Pardo</option>
+          <option value="Dra. María">Dra. Angie Marcedo</option>
+        </select>
+        
+        <label for="hora">Seleccionar hora:</label>
+        <input type="time" id="hora" required>
+        
+        <button type="submit">Confirmar cita</button>
+      </form>
+      <div id="mensajeCita"></div>
+    </div>
+  </div>
+
+  <script src="calendario.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Soporte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="soporte.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Sistema de Soporte</h2>
+        
+
+        <section class="chat-section">
+            <div class="chat-box">
+                <div id="chatMessages" class="chat-messages"></div>
+                <input type="text" id="chatInput" placeholder="Escribe tu mensaje..." />
+                <button id="sendChatBtn">Enviar</button>
+            </div>
+        </section>
+
+
+        <section class="ai-assistant-section">
+            <h3>Asistente IA</h3>
+            <p>¿Tienes alguna pregunta? Pregúntame algo y estaré encantado de ayudarte.</p>
+            <input type="text" id="aiInput" placeholder="Ej. ¿Cómo agregar una cita?" />
+            <button id="askAI">Preguntar</button>
+            <p id="aiResponse"></p>
+        </section>
+
+
+        <section class="remote-assistance-section">
+            <h3>Asistencia Remota</h3>
+            <p>Si necesitas ayuda para resolver un problema técnico, podemos proporcionarte asistencia remota. Haz clic en el botón para solicitar ayuda.</p>
+            <button id="remoteAssistBtn">Solicitar Asistencia Remota</button>
+        </section>
+
+
+        <section class="tutorials-section">
+            <h3>Tutoriales y Guías en Video</h3>
+            <div class="tutorials">
+                <div class="tutorial-card">
+                    <h4>Cómo Agendar Citas</h4>
+                    <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="tutorial-card">
+                    <h4>Cómo Ver Resultados Médicos</h4>
+                    <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="soporte.js"></script>
+</body>
+</html>

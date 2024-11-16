@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración de Preferencias</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Configuración de Preferencias</h2>
+        
+        <section class="section">
+            <h3>Temas Visuales</h3>
+            <p>Elige un tema para la interfaz:</p>
+            <div class="theme-options">
+                <button class="theme-btn" id="theme-light">Tema Claro</button>
+                <button class="theme-btn" id="theme-dark">Tema Oscuro</button>
+            </div>
+        </section>
+
+        <section class="section">
+            <h3>Accesos Directos Personalizados</h3>
+            <p>Configura los accesos directos a las funcionalidades que más usas:</p>
+            <div class="shortcuts">
+                <label for="shortcut1">Acceso Directo 1:</label>
+                <input type="text" id="shortcut1" placeholder="Ej. Ir al Dashboard">
+                
+                <label for="shortcut2">Acceso Directo 2:</label>
+                <input type="text" id="shortcut2" placeholder="Ej. Ver Notificaciones">
+            </div>
+        </section>
+
+        <section class="section">
+            <h3>Tutoriales Interactivos</h3>
+            <p>Activa los tutoriales para aprender cómo usar la plataforma:</p>
+            <div class="tutorials">
+                <button id="tutorials-toggle">Mostrar Tutoriales</button>
+            </div>
+        </section>
+
+        <div class="actions">
+            <button id="save-config">Guardar Configuración</button>
+        </div>
+    </div>
+
+    <script src="settings.css"></script>
+</body>
+</html>

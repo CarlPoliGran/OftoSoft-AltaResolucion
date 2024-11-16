@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Pacientes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Búsqueda Avanzada de Pacientes</h2>
+        
+        <div class="search-section">
+            <label for="search">Buscar Paciente:</label>
+            <input type="text" id="search" placeholder="Buscar por nombre, diagnóstico, etc.">
+            <button id="search-btn">Buscar</button>
+            <div id="suggestions"></div>
+        </div>
+
+        <div class="filters">
+            <h3>Filtros Avanzados</h3>
+            <label for="last-consultation">Última consulta:</label>
+            <input type="date" id="last-consultation">
+
+            <label for="diagnosis">Diagnóstico:</label>
+            <input type="text" id="diagnosis" placeholder="Diagnóstico...">
+
+            <label for="test-results">Resultados de pruebas:</label>
+            <input type="text" id="test-results" placeholder="Ej. Glucosa alta">
+
+            <label for="previous-treatments">Tratamientos previos:</label>
+            <input type="text" id="previous-treatments" placeholder="Ej. Cirugía ocular">
+
+            <button id="apply-filters">Aplicar Filtros</button>
+        </div>
+
+        <div class="results">
+            <h3>Resultados</h3>
+            <div id="patient-results"></div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
